@@ -1673,31 +1673,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\14530019\\.nuget\\packages\\": {}
+    "C:\\Users\\utente\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\14530019\\RiderProjects\\AvaloniaProject\\AvaloniaProject\\AvaloniaProject.csproj",
+      "projectUniqueName": "C:\\Users\\utente\\RiderProjects\\Avalonia\\AvaloniaProject\\AvaloniaProject.csproj",
       "projectName": "AvaloniaProject",
-      "projectPath": "C:\\Users\\14530019\\RiderProjects\\AvaloniaProject\\AvaloniaProject\\AvaloniaProject.csproj",
-      "packagesPath": "C:\\Users\\14530019\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\14530019\\RiderProjects\\AvaloniaProject\\AvaloniaProject\\obj\\",
+      "projectPath": "C:\\Users\\utente\\RiderProjects\\Avalonia\\AvaloniaProject\\AvaloniaProject.csproj",
+      "packagesPath": "C:\\Users\\utente\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\utente\\RiderProjects\\Avalonia\\AvaloniaProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\14530019\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\utente\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {}
         }
@@ -1712,11 +1709,10 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Avalonia": {
@@ -1760,7 +1756,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
