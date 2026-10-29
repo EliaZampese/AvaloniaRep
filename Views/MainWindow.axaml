@@ -29,7 +29,7 @@
                    VerticalAlignment="Center"
                    Padding = "8"
         />
-        <Button Content="Accedi" 
+        <Button Content="Accedi"
                 FontSize="20"
                 FontWeight="Bold"
                 HorizontalAlignment="Center"

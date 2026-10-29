@@ -24,6 +24,7 @@ public partial class MainViewModel : ViewModelBase
             Greeting = "Arrivederci";
             StatusLogin = "LOGIN";
             logged = false;
+            
         }
     }
 }
