@@ -15,29 +15,25 @@
         <vm:MainViewModel />
     </Design.DataContext>
 
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" Spacing="15">
-        
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Spacing="15">
         <TextBlock Text="{Binding Greeting}"
                    FontSize="20"
                    FontWeight="Bold"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Top"
-        />
-        
-        <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"
+                   />
+        <TextBlock Text="{Binding Name}"
                    FontSize="16"
-                   PlaceholderText="Inserisci il tuo nome"
                    FontWeight="Bold"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    Padding = "8"
         />
-        
-        <Button Content="{Binding StatusLogin}"
-                Command="{Binding LoginCommand}"
+        <Button Content="Accedi" 
                 FontSize="20"
                 FontWeight="Bold"
                 HorizontalAlignment="Center"
+                
                 VerticalAlignment="Center"
                 />
         
