@@ -1,5 +1,6 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Avalonia.Controls;
 
 namespace AvaloniaProject.ViewModels;
 
@@ -7,14 +8,19 @@ public partial class MainViewModel : ViewModelBase
 {
     [ObservableProperty] public partial string Greeting { get; set; } = "Benvenuto in Avalonia! Effettua il Login";
     [ObservableProperty] public partial string Name { get; set; } = string.Empty;
-    [ObservableProperty] public partial string StatusLogin { get; set; } = "LOGGED";
-    private bool logged;
+    [ObservableProperty] public partial string StatusLogin { get; set; } = "LOGIN";
+    private bool logged = false;
 
     [RelayCommand]
     private void Login()
     {
         if (!logged)
         {
+            if (string.IsNullOrWhiteSpace(Name))
+            {
+                Greeting = "Inserisci il tuo nome";
+                return;
+            }
             Greeting = $"Benvenuto {Name}";
             StatusLogin = "LOGOUT";
             logged = true;
@@ -22,8 +28,10 @@ public partial class MainViewModel : ViewModelBase
         else
         {
             Greeting = "Arrivederci";
+            Name=string.Empty;
             StatusLogin = "LOGIN";
             logged = false;
+            
         }
     }
 }
