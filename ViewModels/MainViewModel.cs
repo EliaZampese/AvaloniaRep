@@ -1,3 +1,4 @@
+using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
@@ -8,7 +9,10 @@ public partial class MainViewModel : ViewModelBase
 {
     [ObservableProperty] public partial string Greeting { get; set; } = "Benvenuto in Avalonia! Effettua il Login";
     [ObservableProperty] public partial string Name { get; set; } = string.Empty;
+    [ObservableProperty] public partial string SelectedNames { get; set; } = string.Empty;
+    [ObservableProperty] public partial string Password { get; set; } = string.Empty;
     [ObservableProperty] public partial string StatusLogin { get; set; } = "LOGIN";
+    public ObservableCollection<string> Names { get; set; }
     private bool logged = false;
 
     [RelayCommand]
